@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link  css -->
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/snackBar.css" />
+    <!-- link boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- link swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- link boxiicon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="snackbar">đăng kí để mua hàng</div>
+    <div id="main-content" id="demo">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand"
+              href="logoLoading.html"
+              style="margin-left: 50px"
+              ><img class="nav-img" src="./img/icon/logo-gongcha.svg" alt=""
+            /></a>
+
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent d-flex align-items-center"
+            >
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center text-center"
+              >
+                <li class="nav-item mx-2">
+                  <a
+                    onmouseover="changeText(this)"
+                    onmouseout="notChangeText(this)"
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a
+                    onmouseover="changeText1(this)"
+                    onmouseout="notChangeText1(this)"
+                    class="nav-link"
+                    href="buyJ.html"
+                  >
+                    ORDER</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a
+                    onmouseover="changeText2(this)"
+                    onmouseout="notChangeText2(this)"
+                    class="nav-link"
+                    href="mapStore.html"
+                  >
+                    STORE
+                  </a>
+                </li>
+
+                <li class="nav-item mx-2">
+                  <a
+                    onmouseover="changeText3(this)"
+                    onmouseout="notChangeText3(this)"
+                    class="nav-link"
+                    href="#"
+                    style="min-width: 150px !important"
+                    >BRAND STORY</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a
+                    onmouseover="changeText4(this)"
+                    onmouseout="notChangeText4(this)"
+                    class="nav-link"
+                    href="#"
+                    >FRANCHISE</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a
+                    onmouseover="changeText5(this)"
+                    onmouseout="notChangeTex5(this)"
+                    class="nav-link"
+                    href="#"
+                    >RECRUIT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="me-5" id="loginUser">
+              <a href="login.html">Đăng nhập </a>
+            </div>
+            <div
+              class="me-5 user btn dropdown-toggle dropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              role="button"
+              id="inforUser"
+            >
+              <img src="img/userAdmin/anh .jpeg" alt="" id="showImg" />
+              <ul class="dropdown-menu info-drop">
+                <li>
+                  <a class="dropdown-item" onclick="changeUser()"
+                    >Information User</a
+                  >
+                </li>
+
+                <li><a class="dropdown-item" onclick="logout()">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div>
+          <div class="slideshow">
+            <h1>Brewing Happiness</h1>
+            <div
+              style="background-image: url(./img/slide-img/img_kv_01.jpg)"
+            ></div>
+            <div
+              style="background-image: url(./img/slide-img/img_kv_02.jpg)"
+            ></div>
+            <div
+              style="background-image: url(./img/slide-img/img_kv_03.jpg)"
+            ></div>
+            <div
+              style="background-image: url(./img/slide-img/img_kv_04.jpg)"
+            ></div>
+            <div
+              style="background-image: url(./img/slide-img/img_kv_05.jpg)"
+            ></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="menu-pdf">
+          <a
+            href="https://www.gongcha.co.jp/wp-content/themes/gongcha/pdf/gongcha_allmenu_sp.pdf"
+            ><img src="img/icon-main/icon_menu-pdf.png" alt=""
+          /></a>
+        </div>
+        <div class="main">
+          <section class="container section-1">
+            <div class="row">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="./img/slide main/gongcha_kyoho_webcarousel.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./img/slide main/gongcha_teamaster_webcarousel.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./img/slide main/gongcha_yakiimo_webcarousel.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./img/slide main/mobile_order_carousel_220228.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </section>
+          <section class="container section-2">
+            <div class="row">
+              <div class="col-12">
+                <p class="fs-e text-center mt-5 text-danger">MENU</p>
+                <h2 class="text-center mt-1 text-dark text-size">メニュー</h2>
+              </div>
+            </div>
+          </section>
+          <section class="section-3 mt-5">
+            <img
+              src="img/icon-main/img_rotate-txt.svg"
+              alt=" "
+              style="width: 200px"
+              class="icon-rotate rotate-360"
+            />
+            <img
+              src="img/icon-main/customer.svg"
+              alt=" "
+              style="width: 100px"
+              class="icon-rotate mid-rotate"
+            />
+
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./img/img-menu-lv2/img_header_food.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title title-top">Straight Tea</h5>
+                    <h5 class="card-title">ストレートティー</h5>
+                    <p class="card-text">個性豊かなストレートティー</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./img/img-menu-lv2/img_header_frozen.jpg"
+                      class="card-img-top card-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title title-top">Milk Tea</h5>
+                    <h5 class="card-title">ミルクティー</h5>
+                    <p class="card-text">定番のオリジナルミルクティー</p>
+                  </div>
+                </div>
+
+                <div class="card" style="height: 500px">
+                  <div class="card-img">
+                    <img
+                      src="./img/img-menu-lv2/img_header_fruit.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title title-top">Brown Sugar</h5>
+                    <h5 class="card-title">黒糖</h5>
+                    <p class="card-text">黒糖のコクと深みのある味わい</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./img/img-menu-lv2/img_header_kokutou.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title title-top">Fruit Tea</h5>
+                    <h5 class="card-title">フルーツティー</h5>
+                    <p class="card-text">フルーツとお茶のハーモニー</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./img/img-menu-lv2/img_header_milk.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title title-top">Frozen Tea</h5>
+                    <h5 class="card-title">フローズンティー</h5>
+                    <p class="card-text">ひんやりやさしい甘さの フローズン</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="./img/img-menu-lv2/img_header_others.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title title-top">Fruit Vinegar</h5>
+                    <h5 class="card-title">フルーツビネガー</h5>
+                    <p class="card-text">果実感たっぷりの ビネガードリンク</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img src="img/tree/img_leaf_01.png" alt="" class="leaf leaf_01" />
+            <img src="img/tree/img_leaf_02.png" alt="" class="leaf leaf_03" />
+            <img src="img/tree/img_leaf_03.png" alt="" class="leaf leaf_02" />
+          </section>
+          <section class="section-4 mt-5">
+            <div
+              class="icon-tittle d-flex justify-content-center align-items-center mb-1"
+            >
+              <h2 class="text-center mt-2 text-dark text-size">もっと見る</h2>
+              <span class="ms-3"
+                ><box-icon
+                  name="right-arrow-alt"
+                  animation="fade-right"
+                  size="lg"
+                  style="cursor: pointer"
+                ></box-icon
+              ></span>
+            </div>
+            <div class="content-section-4">
+              <p class="text-content">
+                お茶本来のうま味と香り。<br />ゴンチャのお茶を<br />ぜひ、ご賞味ください。
+              </p>
+            </div>
+          </section>
+          <section class="section-5 container">
+            <div class="row d-flex justify-content-center">
+              <div class="img-section-5 col-6">
+                <img src="./img/background-main/img_store.jpg" alt="" />
+              </div>
+              <div class="content-section-5 col-6 d-flex flex-column">
+                <div class="title mt-5">
+                  <span>Store</span>
+                  <h3>店舗検索</h3>
+                </div>
+                <div class="title1 mt-3">
+                  <span>ゴンチャの店舗を検索できます</span>
+                </div>
+                <!-- <div class="icon mt-5">
+                <img src="./img/icon-main/icon_arrow-black.svg" alt="" />
+              </div> -->
+              </div>
+            </div>
+          </section>
+          <!-- section-6 -->
+          <section class="section-6">
+            <div class="s6-content">
+              <div class="content-section-5 col-6 d-flex flex-column s6">
+                <div class="title mt-5">
+                  <span class="fs-5 text-danger">BRAND STORY</span>
+                  <h3>Brewing Happiness</h3>
+                </div>
+                <div class="title1 mt-3">
+                  <span
+                    >新たなティーカルチャーを創造し、 お客様一人ひとりの日常に
+                    Happinessをお届けします</span
+                  >
+                </div>
+                <!-- <div class="mt-5 icon-s6">
+              <img
+                src="./img/background-main/icon_arrow-circle_white.svg"
+                alt=""
+              />
+            </div> -->
+              </div>
+            </div>
+            <div class="img-s6">
+              <div class="img-1">
+                <img src="./img/tree/img_leaf_05.png" alt="" />
+              </div>
+              <div class="img-2">
+                <img src="./img/tree/img_leaf_06.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <section class="section-7">
+            <div class="content-section col-6 d-flex flex-column">
+              <div class="title mt-5">
+                <span class="text-danger">Store</span>
+                <h3 class="fs-1">茶葉について</h3>
+              </div>
+            </div>
+          </section>
+          <section class="section-8">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p class="fs-3 text-center mt-5 text-danger">NEWS</p>
+                  <h2 class="text-center mt-1 text-dark text-size">
+                    ゴンチャニュース
+                  </h2>
+                </div>
+              </div>
+              <div class="row d-flex flex-row mb-3 list-card">
+                <ul>
+                  <li>
+                    <a
+                      href="https://campaign.gongcha.co.jp/yakiimo-2023/index.html?_gl=1*e3le28*_gcl_au*NTg1NzAwODMwLjE2OTYyMDg3OTU.*_ga*NTQ3NDM0NDA0LjE2OTYyMDg3OTc.*_ga_F4SYD729GY*MTY5NzUzMzE5MC4zOC4xLjE2OTc1MzM4NjEuMC4wLjA.&_ga=2.240978951.582920681.1697470174-547434404.1696208797"
+                      class="content-s8 d-flex"
+                    >
+                      <div class="img-s8 col-4">
+                        <img
+                          src="./img/background-main/gongcha_yakiimo_ogp_230904.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="title-s8 col-8 ms-5 mt-4">
+                        <span>2023年09月27日</span>
+                        <p class="c-news-contents-list__txt sp-hide">
+                          まるで飲む焼き芋！？秋を感じる濃厚デザート「焼き芋ごくり
+                          ミルクティーフローズン」10月5日-木〜期間限定で登場
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://campaign.gongcha.co.jp/sunshine-muscat-2023/index.html?_gl=1*1d05km5*_gcl_au*NTg1NzAwODMwLjE2OTYyMDg3OTU.*_ga*NTQ3NDM0NDA0LjE2OTYyMDg3OTc.*_ga_F4SYD729GY*MTY5NzUzMzE5MC4zOC4xLjE2OTc1MzQyMjMuMC4wLjA.&_ga=2.1656373.582920681.1697470174-547434404.1696208797"
+                      class="content-s8 d-flex"
+                    >
+                      <div class="img-s8 col-4">
+                        <img
+                          src="./img/background-main/gongcha_muscat_webbanner.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="title-s8 col-8 ms-5 mt-4">
+                        <span>2023年09月14日</span>
+                        <p class="c-news-contents-list__txt sp-hide">
+                          クルーが開発したこだわりの一作を堪能！「ゴンチャ
+                          ティーマスターコンペティション2023」グランプリ受賞作を9月21日木〜期間・エリア限定販売
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=" https://campaign.gongcha.co.jp/gyugyutto-peach-2023/index.html?_gl=1*mnqf57*_gcl_au*NTg1NzAwODMwLjE2OTYyMDg3OTU.*_ga*NTQ3NDM0NDA0LjE2OTYyMDg3OTc.*_ga_F4SYD729GY*MTY5NzUzMzE5MC4zOC4xLjE2OTc1MzQyNDkuMC4wLjA.&_ga=2.1656373.582920681.1697470174-547434404.1696208797"
+                      class="content-s8 d-flex"
+                    >
+                      <div class="img-s8 col-4">
+                        <img
+                          src="./img/background-main/gongcha_peach_webbanner_A.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="title-s8 col-8 ms-5 mt-4">
+                        <span>2023年09月27日</span>
+                        <p class="c-news-contents-list__txt sp-hide">
+                          旬の味わいが魅惑する「じゅわっと巨峰
+                          ミルクティー／フローズン／ティーエード」8月24日（木）〜期間限定で登場
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://campaign.gongcha.co.jp/tea-master-competition2023/index.html?_gl=1*1jdo2js*_gcl_au*NTg1NzAwODMwLjE2OTYyMDg3OTU.*_ga*NTQ3NDM0NDA0LjE2OTYyMDg3OTc.*_ga_F4SYD729GY*MTY5NzUzMzE5MC4zOC4xLjE2OTc1MzQyNjUuMC4wLjA.&_ga=2.40462630.582920681.1697470174-547434404.1696208797"
+                      class="content-s8 d-flex"
+                    >
+                      <div class="img-s8 col-4">
+                        <img
+                          src="./img/background-main/gongcha_teamaster_OGP.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="title-s8 col-8 ms-5 mt-4">
+                        <span>2023年09月17日</span>
+                        <p class="c-news-contents-list__txt sp-hide">
+                          「SUNシャインマスカット
+                          ミルクティー／フローズン／ティーエード」で気分をスカッと爽快に！6月8日（木）〜期間限定で登場
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://campaign.gongcha.co.jp/kyoho-2023/index.html?_gl=1*d3auc6*_gcl_au*NTg1NzAwODMwLjE2OTYyMDg3OTU.*_ga*NTQ3NDM0NDA0LjE2OTYyMDg3OTc.*_ga_F4SYD729GY*MTY5NzUzMzE5MC4zOC4xLjE2OTc1MzQzODYuMC4wLjA.&_ga=2.40462630.582920681.1697470174-547434404.1696208797"
+                      class="content-s8 d-flex"
+                      ><div class="img-s8 col-4">
+                        <img
+                          src="./img/background-main/gongcha_kyoho_PRimg.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="title-s8 col-8 ms-5 mt-4">
+                        <span>2023年11月07日</span>
+                        <p class="c-news-contents-list__txt sp-hide">
+                          まるで飲む焼き芋！？秋を感じる濃厚デザート「焼き芋ごくり
+                          ミルクティーフローズン」10月5日-木〜期間限定で登場
+                        </p>
+                      </div></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="container col-6"></div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- <footer>
+    <div class="container-fluid content-footer">
+      <div class="row">
+        <div class="col-4">
+          <img src="./img/icon/icon_logo.svg" style="width: 200px" alt="" />
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+    </div>
+  </footer> -->
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+      <div class="footer">
+        <footer class="text-white text-center text-lg-start">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">私達会社</h5>
+
+                <p>
+                  お茶に恋をする、美しい生活 “
+                  初めて飲むと驚きを感じ、２回飲むと好きになり、３回飲むと恋しくなる
+                  ” 日常の中に溶け込むように、生活の所々に様々な感動を届けたい。
+                  これが “THE ALLEY（ジ アレイ）” の初心。 私たち “THE ALLEY”
+                  の想いは
+                  “ただのドリンクスタンドではなく、本当に素晴らしい生活へ導けるドアの鍵“
+                  。
+                </p>
+
+                <p>
+                  私たちはいい飲み物は味覚だけではなく、生活に感動を起こせるものだと信じています。
+                  お茶を飲むことで心を満たし、味わうことで幸せを感じる。
+                  あなたの心に潜んでいた、言葉で表すことのできない神秘的な世界を。
+                  “ THE ALLEY ”の飲み物を通じて、
+                  あなたの美しい生活を描いていきましょう
+                </p>
+
+                <div class="mt-4">
+                  <!-- Facebook -->
+
+                  <!-- Dribbble -->
+
+                  <!-- Twitter -->
+
+                  <!-- Google + -->
+
+                  <!-- Linkedin -->
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 pb-1">
+                  タピオカドリンク　ゴンチャ 本店　連絡
+                </h5>
+
+                <ul class="fa-ul" style="margin-left: 1.65em">
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-home"></i></span
+                    ><span class="ms-2"> 東京都墨田区押上一丁目1番2号 1F</span>
+                  </li>
+
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-phone"></i></span
+                    ><span class="ms-2"> TEL：03-6284-1917</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./img/icon/icon_logo.svg"
+                      style="width: 200px"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">
+                  タピオカドリンク　ゴンチャ 泉町店　
+                </h5>
+                <li class="mb-3">
+                  <span class="ms-2"> 営業時間：11.00 am - 20.00 pm</span>
+                </li>
+                <li class="mb-3">
+                  <span class="ms-2"> 定休日：全年無休</span>
+                </li>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"
+              >ゴンチャ.com</a
+            >
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+      <!-- End of .container -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/home.js"></script>
+    <script src="js/changeLangue.js"></script>
+  </body>
+</html>

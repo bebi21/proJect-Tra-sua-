@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/forgotPass.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <div
+        style="cursor: pointer; float: right; padding-top: 5px; z-index: 999"
+      >
+        <a href="login.html" style="height: 50px !important">
+          <ion-icon
+            name="close-outline"
+            style="font-size: 40px; cursor: pointer"
+          ></ion-icon>
+        </a>
+      </div>
+      <form action="" id="forgotPassword">
+        <h1>Forgot Password</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Username"
+            id="userNameSearch"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <button type="button" class="btn" onclick="searchUser()">
+            search
+          </button>
+        </div>
+      </form>
+      <form action="" id="resetPassword">
+        <h1>Reset Password</h1>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Enter a new password"
+            id="resetPass"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Confirm Password"
+            id="confirmPassword"
+            required
+          />
+        </div>
+
+        <div class="input-box">
+          <button type="button" class="btn" onclick="savePassword()">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+    <video autoplay loop muted>
+      <source type="video/mp4" src="./login can sua/video/Milk Tea ad.mp4" />
+    </video>
+  </body>
+  <script src="./js/forgotPass.js"></script>
+</html>

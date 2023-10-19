@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Document</title>
+    <style>
+      #danger {
+        color: red;
+        display: none;
+      }
+      #danger1 {
+        color: red;
+        display: none;
+      }
+      #danger2 {
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="float: right; padding-top: 5px">
+        <a href="login.html"
+          ><ion-icon name="close-outline" style="font-size: 40px"></ion-icon>
+        </a>
+      </div>
+      <div class="title" style="z-index: -99">Registation</div>
+      <form action="#" style="z-index: -99">
+        <div class="user_details">
+          <div class="input_pox">
+            <span class="datails">Full Name</span>
+            <input type="text" placeholder="enter your name" id="fullname" />
+          </div>
+          <div class="input_pox">
+            <span class="datails">Username</span>
+            <input
+              type="text"
+              placeholder="enter your Username"
+              id="userName"
+            />
+            <span class="danger" id="danger">
+              * Không được để trống phần này</span
+            >
+          </div>
+          <div class="input_pox">
+            <span class="datails">Email</span>
+            <input type="text" placeholder="enter your Email" id="email" />
+          </div>
+          <div class="input_pox">
+            <span class="datails">Phone Number</span>
+            <input
+              type="text"
+              placeholder="enter your Phone"
+              id="phonenumber"
+            />
+          </div>
+          <div class="input_pox">
+            <span class="datails">Password</span>
+            <input
+              type="password"
+              placeholder="enter your Password"
+              id="password"
+            />
+            <span class="danger" id="danger1">
+              * Không được để trống phần này</span
+            >
+          </div>
+          <div class="input_pox">
+            <span class="datails">Confirm Password</span>
+            <input
+              type="password"
+              placeholder="Confirm your Password"
+              id="confirmPassword"
+            />
+            <span class="danger" id="danger2">
+              * Không được để trống phần này</span
+            >
+          </div>
+          <div class="input_pox">
+            <span class="datails">Address</span>
+            <input type="text" placeholder="Address" id="address" />
+          </div>
+          <div class="input_pox">
+            <span class="datails">Zip</span>
+            <input type="number" placeholder="123123" id="zip" />
+          </div>
+          <div class="input_pox">
+            <label for="upload-user" class="button-19">Up Avatar</label>
+          </div>
+          <div class="input_pox">
+            <img
+              src="/img/userAdmin/anh .jpeg"
+              id="showImg"
+              alt=""
+              style="height: 100px"
+            />
+          </div>
+        </div>
+
+        <div class="button">
+          <input onclick="register(event)" value="Register" type="submit" />
+        </div>
+      </form>
+    </div>
+    <input
+      type="file"
+      id="upload-user"
+      onchange="changeImage(this)"
+      style="visibility: hidden; position: absolute; bottom: 0; left: 0"
+    />
+    <video autoplay loop muted>
+      <source type="video/mp4" src="./login can sua/video/Milk Tea ad.mp4" />
+    </video>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="js/register.js"></script>
+</html>

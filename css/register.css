@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -99;
+}
+a {
+  color: #fff;
+}
+
+/*  */
+.container {
+  max-width: 700px;
+  width: 100%;
+  height: 95vh;
+  background: transparent;
+  padding: 25px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(123deg, #71b8e7, #9b59b6);
+}
+.container form .user_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .user_details .input_pox {
+  margin-bottom: 15px;
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+}
+.user_details .input_pox .datails {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user_details .input_pox input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user_details .input_pox input:focus,
+.user_details .input_pox input:valid {
+  border-color: #9b59b6;
+}
+form .gender_details .gender_title {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .gender_details .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+.gender_details .category label {
+  display: flex;
+}
+.gender_details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  border-color: #d9d9d9;
+  background-color: #9b59b6;
+}
+form input[type="radio"] {
+  display: none;
+}
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(123deg, #71b8e7, #9b59b6);
+}
+form .button input :hover {
+  background: linear-gradient(-123deg, #71b8e7, #9b59b6);
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user_details .input_pox {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .gender_details .category {
+    width: 100%;
+  }
+  .container form .user_details {
+    max-height: 300px;
+    overflow: scroll;
+  }
+  .user_details::-webkit-scrollber {
+    width: 0;
+  }
+}
+
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+#showImg {
+  width: 110px;
+  height: 110px;
+  border: 2px solid black;
+  border-radius: 999px;
+}

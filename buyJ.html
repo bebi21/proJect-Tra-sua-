@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/buyJ.css" />
+
+    <!-- link boostrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- link swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- link boxiicon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img class="nav-img" src="./img/icon/logo-gongcha.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center text-center"
+            >
+              <li class="nav-item mx-2">
+                <a
+                  onmouseover="changeText(this)"
+                  onmouseout="notChangeText(this)"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="home.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  onmouseover="changeText1(this)"
+                  onmouseout="notChangeText1(this)"
+                  class="nav-link"
+                  href="#"
+                >
+                  ORDER</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  onmouseover="changeText2(this)"
+                  onmouseout="notChangeText2(this)"
+                  class="nav-link"
+                  href="mapStore.html"
+                >
+                  STORE
+                </a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a
+                  onmouseover="changeText3(this)"
+                  onmouseout="notChangeText3(this)"
+                  class="nav-link"
+                  href="#"
+                  style="min-width: 150px !important"
+                  >BRAND STORY</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  onmouseover="changeText4(this)"
+                  onmouseout="notChangeText4(this)"
+                  class="nav-link"
+                  href="#"
+                  >FRANCHISE</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a
+                  onmouseover="changeText5(this)"
+                  onmouseout="notChangeTex5(this)"
+                  class="nav-link"
+                  href="#"
+                  >RECRUIT</a
+                >
+              </li>
+            </ul>
+
+            <div class="me-15 cart" id="user-order" onclick="orderUser()">
+              <ion-icon name="cart-outline" style="font-size: 50px"></ion-icon>
+              <span class="count" id="count" style="display: none"></span>
+            </div>
+            <div class="me-10" id="loginUser">
+              <a href="login.html">LOGIN</a>
+            </div>
+            <div
+              class="me-10 user btn dropdown-toggle dropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              role="button"
+              id="inforUser"
+            >
+              <img src="img/userAdmin/anh .jpeg" alt="" id="showImg" />
+              <ul class="dropdown-menu info-drop">
+                <li>
+                  <a class="dropdown-item" onclick="inforUser()"
+                    >Information
+                  </a>
+                </li>
+                <li><a class="dropdown-item" onclick="logout()">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="banner-header">
+        <span class="fs-4">MENU</span>
+        <h2 class="fs-1">ゴンチャのメニュー</h2>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="row">
+          <div class="col-3">
+            <ul class="list-order" id="list-menu">
+              <li class="category"></li>
+            </ul>
+          </div>
+
+          <div class="col-9 container" id="showItem">
+            <div class="row title-item" id="title-item">
+              <!-- <div class="img-banner_item">
+                <img src="./img/buy-img/b2/img_main_milk-tea-2.jpg" alt="" />
+              </div>
+              <div class="col-5 title">
+                <span>ストレートティー</span>
+                <h1>Straight Tea</h1>
+                <span class="tittle-2" style="color: #eea777; font-size: 2rem"
+                  >個性豊かなストレートティー</span
+                >
+                <p>
+                  個性豊かなゴンチャのストレートティー。それぞれのおいしさを味わっていただくため、茶葉ごとに抽出時の湯温や抽出時間を変えてていねいに淹れています。香りや鮮度にこだわり、抽出後4時間以内のものだけをお客様に提供します。
+                </p>
+              </div> -->
+            </div>
+
+            <div class="row item">
+              <div class="render d-flex grid gap-4" id="item">
+                <!-- <div class="card" style="width: 18rem">
+                  <img
+                    src="./img/buy-img/b2/img_oolong-milk-tea.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">+</a>
+                    <span>$100</span>
+                    <a href="#" class="btn btn-primary">-</a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer">
+      <footer class="text-white text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row mt-4">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">私達会社</h5>
+
+              <p>
+                お茶に恋をする、美しい生活 “
+                初めて飲むと驚きを感じ、２回飲むと好きになり、３回飲むと恋しくなる
+                ” 日常の中に溶け込むように、生活の所々に様々な感動を届けたい。
+                これが “THE ALLEY（ジ アレイ）” の初心。 私たち “THE ALLEY”
+                の想いは
+                “ただのドリンクスタンドではなく、本当に素晴らしい生活へ導けるドアの鍵“
+                。
+              </p>
+
+              <!-- <p>
+                  私たちはいい飲み物は味覚だけではなく、生活に感動を起こせるものだと信じています。
+                  お茶を飲むことで心を満たし、味わうことで幸せを感じる。
+                  あなたの心に潜んでいた、言葉で表すことのできない神秘的な世界を。
+                  “ THE ALLEY ”の飲み物を通じて、
+                  あなたの美しい生活を描いていきましょう
+                </p> -->
+
+              <div class="mt-4">
+                <!-- Facebook -->
+
+                <!-- Dribbble -->
+
+                <!-- Twitter -->
+
+                <!-- Google + -->
+
+                <!-- Linkedin -->
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 pb-1">
+                タピオカドリンク　ゴンチャ 本店　連絡
+              </h5>
+
+              <ul class="fa-ul" style="margin-left: 1.65em">
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-home"></i></span
+                  ><span class="ms-2"> 東京都墨田区押上一丁目1番2号 1F</span>
+                </li>
+
+                <li class="mb-3">
+                  <span class="fa-li"><i class="fas fa-phone"></i></span
+                  ><span class="ms-2"> TEL：03-6284-1917</span>
+                </li>
+                <li class="mb-3 icon">
+                  <img
+                    src="./img/icon/icon_logo.svg"
+                    style="width: 100px"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">
+                タピオカドリンク　ゴンチャ 泉町店　
+              </h5>
+              <li class="mb-3">
+                <span class="ms-2"> 営業時間：11.00 am - 20.00 pm</span>
+              </li>
+              <li class="mb-3">
+                <span class="ms-2"> 定休日：全年無休</span>
+              </li>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">ゴンチャ.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- End of .container -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="js/buyJ.js"></script>
+  <script src="js/changeLangue.js"></script>
+</html>

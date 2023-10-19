@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -99;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #353f35;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-top: 15%;
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .input-box {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin-top: 20px;
+  color: #ffff;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 40px 20px 20px;
+}
+.input-box input::placeholder {
+  color: #fff;
+}
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 15px 5px 15px;
+}
+.remember-forgot label input {
+  color: #353f35;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+.remember-forgot a:hover {
+  text-decoration: none;
+}
+.forgotChangeColor:hover {
+  color: #353f35;
+}
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #333;
+  font-weight: 700;
+}
+.wrapper .btn:hover {
+  background: linear-gradient(123deg, #71b8e7, #9b59b6);
+  transition: 550ms;
+  color: #fff ;
+}
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link p a:hover {
+  text-decoration: none;
+  color: black;
+}
+/*  */
+#loginUser {
+  display: block;
+}
+#registerUser {
+  display: none;
+}
+#forgotPassword {
+  display: none;
+}
+#resetPassword {
+  display: none;
+}
+.input-box {
+  text-align: center;
+}
+.input-box strong {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+#registerUser button {
+  margin-top: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* btn */
+.btn-pro {
+  width: 100px;
+  height: 100px;
+
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.btn-pro label {
+  text-align: center;
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-pro svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-pro:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btn-pro:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btn-pro:hover label {
+  transform: translateX(5em);
+}
+
+.btn-pro:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+/* userImg */
+#upload-user {
+  visibility: hidden;
+}
+.upload-user {
+  color: #ffff;
+}
+/* showimg */
+.showImg {
+  position: relative;
+}
+#showImg {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border: 2px solid black;
+  border-radius: 99px;
+  right: 0;
+  top: -100px;
+}

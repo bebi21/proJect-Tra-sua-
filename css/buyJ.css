@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkmagenta;
+  font-family: "Noto Serif JP", serif;
+}
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+ul {
+  list-style: none;
+}
+h2 {
+  font-family: "Noto Serif JP", serif;
+}
+.nav-img {
+  width: 70px;
+}
+.banner-header {
+  margin-top: 20vh;
+  background-image: url(/img/buy-img/img_bg-head.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: inherit;
+  z-index: 999;
+  height: 40vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+main {
+  padding-top: 100px;
+}
+.img-banner_item img {
+  width: 80%;
+  float: right;
+}
+.title-item {
+  position: relative;
+}
+.title {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.item {
+  margin-top: 150px !important;
+}
+
+.render {
+  flex-wrap: wrap;
+}
+.category {
+  padding: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.list-order {
+  margin-left: -50px;
+}
+.img-main {
+  position: relative;
+}
+.main-img img {
+  z-index: -999;
+  position: absolute;
+  bottom: 150px;
+  left: 120px;
+  width: 200px;
+}
+/* .item-1 {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+  }
+   */
+
+/* footer */
+.footer {
+  margin-top: 50px;
+  position: relative;
+  background-color: #382b1f;
+  color: #fff;
+  width: 100vw;
+}
+.content-footer {
+  padding: 20px 10px;
+}
+.icon {
+  width: 50px !important ;
+}
+.user img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 999px;
+}
+#inforUser {
+  display: none;
+}
+.info-drop {
+  left: -20px !important;
+}
+#inforUser {
+  display: none;
+}
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+.count {
+  position: absolute;
+  background-color: black;
+  border-radius: 50px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  min-width: 100px !important;
+}
